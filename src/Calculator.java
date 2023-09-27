@@ -17,7 +17,30 @@ public class Calculator {
         System.out.print("İşleminiz: ");
         int select = scan.nextInt();
 
-        if (select==1) {
+        switch (select) {
+            case 1:
+                System.out.println("Sonuc: " + (a+b));
+                break;
+            case 2:
+                System.out.println("Sonuc: " + (a-b));
+                break;
+            case 3:
+                System.out.println("Sonuc: " + (a*b));
+                break;
+            case 4:
+                if (b==0) {
+                    System.out.println("Bölen sayısı sıfır olamaz!!");
+                
+                }
+                else {
+                    System.out.println("Sonuc: " + (a/b));
+
+                }
+                break;
+                
+        }
+
+        /*if (select==1) {
             System.out.println("Sonuc: " + (a+b));
         }
             else if (select==2) {
@@ -41,7 +64,7 @@ public class Calculator {
             }
         else {
             System.out.println("Lütfen geçerli bir sayı giriniz!!");
-        }
+        }*/
 
     }
 }
